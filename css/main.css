@@ -246,7 +246,7 @@
     color: #999;
 }
 #home-posts .post {
-    background: #fff;
+    background: #e9d3df;
     border-radius: 20px;
     box-shadow: 0 0 20px #d9d9d980;
     transition: box-shadow 0.25s, transform 0.25s;
@@ -676,7 +676,7 @@ blockquote {
     padding: 0 15px;
 }
 body {
-    background: #f6f8fa;
+    background: #ead1df;
     color: #1e3e3f;
     font: 500 14px Lexend, "Noto Sans SC", sans-serif;
     overflow-x: hidden;
@@ -905,7 +905,7 @@ ol li {
     }
     #home-head #home-info .info {
         align-items: center;
-        background: #ffffffa6;
+        background: #e6b1d170;
         display: flex;
         height: 350px;
         justify-content: center;
