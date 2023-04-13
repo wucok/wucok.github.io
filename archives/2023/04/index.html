@@ -3,7 +3,7 @@
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
-        <title>java | YouSang</title>
+        <title>Archives | YouSang</title>
         <meta name="author" content="优" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
@@ -34,6 +34,8 @@
 <script src="/js/lib/preview.js"></script>
 
 
+
+<script src="/js/lib/search.js"></script>
 
 
 
@@ -144,23 +146,63 @@
 
             <transition name="into">
             <div id="main" v-show="!loading">
-                <div id="archives">
+                
+<div id="archives">
     
-    <div class="categories-tags">
+    <input id="search-bar" class="input" placeholder="搜索" v-model="rawSearch" />
+    
+    <div id="timeline-wrap" ref="timeline">
         
+        <div class="timeline" data-title="java">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2023/4/13</div>
+                <a href="/2023/04/13/TEST/">
+                    <h3>JAVA</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/java/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            java
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/java/" style="color: #00bcd4">java</a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
         
-        <span>
-            <a href="/tags/java/" style="background: #00bcd4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                java
-            </a>
-        </span>
-        
+        <div class="timeline" data-title="page">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2023/4/13</div>
+                <a href="/2023/04/13/page/">
+                    <h3>page</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                </div>
+            </div>
+        </div>
         
     </div>
-    
 </div>
 
                 <footer id="footer">

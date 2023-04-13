@@ -3,7 +3,7 @@
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
-        <title>java | YouSang</title>
+        <title>YouSang</title>
         <meta name="author" content="优" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
@@ -36,6 +36,8 @@
 
 
 
+
+<script src="/js/lib/home.js"></script>
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -144,21 +146,158 @@
 
             <transition name="into">
             <div id="main" v-show="!loading">
-                <div id="archives">
-    
-    <div class="categories-tags">
+                <div id="home-head">
+    <div
+        id="home-background"
+        ref="homeBackground"
+        data-images="/images/background.jpg"
+    ></div>
+    <div id="home-info" @click="homeClick">
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="info">
+            <div class="wrap">
+                <h1>YouSang</h1>
+                <h3>nikou</h3>
+                <h5></h5>
+            </div>
+        </span>
+    </div>
+</div>
+<div id="home-posts-wrap"  ref="homePostsWrap">
+    <div id="home-posts">
+        
+
+<div class="post">
+    <a href="/2023/04/13/page/">
+        <h2 class="post-title">page</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/4/13
+        </span>
         
         
-        <span>
-            <a href="/tags/java/" style="background: #00bcd4">
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        
+    </div>
+    <a href="/2023/04/13/page/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2023/04/13/TEST/">
+        <h2 class="post-title">JAVA</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/java/">
                 <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
                 java
             </a>
         </span>
         
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/4/13
+        </span>
         
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <h1 id="JAVA太卷"><a href="#JAVA太卷" class="headerlink" title="JAVA太卷"></a>JAVA太卷</h1><ul>
+<li>计算机艰难就业？  </li>
+<li>java<br>java路上太多东西要学。  </li>
+<li>python<br>一款封装的比较好的编程语言<br><img src="https://th.bing.com/th/id/OIP.5V2cdfl9xZ7U4EPbOG27bwHaEo?w=314&h=196&c=7&r=0&o=5&pid=1.7"></li>
+</ul>
+<p><a href="wucok.github.io">？？？？？</a>  </p>
+<ol>
+<li>ssss</li>
+</ol>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/java/" style="color: #00bcd4">
+                java
+            </a>
+        </span>
+        
+    </div>
+    <a href="/2023/04/13/TEST/" class="go-post">阅读全文</a>
+</div>
+
+
+        <div class="page-current">
+    <div class="prev">
+        
+    </div>
+    <div class="page-index">
+        
+        <span class="current">1</span>
+        
+    </div>
+    <div class="next">
+        
+    </div>
+</div>
+
+    </div>
+    
+    <div id="home-card">
+        <div id="card-div">
+    <div class="card-style">
+        <div class="avatar">
+            <img src="/images/avatar.jpg" alt="avatar" />
+        </div>
+        <div class="name">优</div>
+        <div class="description">
+            <p>Description<br>…</p>
+
+        </div>
+        
+        
+        <div class="friend-links">
+            
+            <div class="friend-link">
+                <a href="/%5Bobject%20Object%5D">Argvchs</a>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
     </div>
     
 </div>
